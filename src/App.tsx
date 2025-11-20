@@ -11,7 +11,6 @@ function App() {
         <Header/>
         
         <Routes>
-          {/* Route untuk Home */}
           <Route path="/" element={
             <div className="flex flex-col items-center justify-center gap-6 p-6">
               <Hero/>

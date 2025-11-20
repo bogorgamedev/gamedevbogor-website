@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-// Import gambar-gambar Anda
 import img1 from "../assets/example.jpeg";
 import img2 from "../assets/example2.jpeg";
 import img3 from "../assets/logo.png";

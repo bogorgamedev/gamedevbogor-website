@@ -1,11 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FaDiscord, FaWhatsapp, FaInstagram, FaHeart } from "react-icons/fa";
+import { FaDiscord, FaWhatsapp, FaInstagram} from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
     <footer className="mt-10 px-5 py-8 bg-blue-500 text-white border-t-4 border-black relative overflow-hidden">
-      {/* Animated Pixel Particles - New Animation */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(12)].map((_, i) => (
           <div
@@ -24,10 +22,8 @@ const Footer: React.FC = () => {
 
       <div className="max-w-6xl mx-auto relative z-10">
         
-        {/* Main Footer Content */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-center">
-          
-          {/* Logo & Description */}
           <div className="text-center md:text-left">
             <div className="inline-block bg-white px-6 py-3 border-2 btn mb-4 hover:animate-pixel-bounce transition-all duration-300">
               <h3 className="text-black font-bold text-xl pixel-font tracking-wide">GAMEDEV BOGOR</h3>
