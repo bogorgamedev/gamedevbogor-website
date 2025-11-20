@@ -46,8 +46,8 @@ const Header: React.FC = () => {
         <div className="md:hidden">
           <div className="flex justify-between items-center px-4 py-3 border-4 border-black bg-blue-500">
             <Link to="/">
-              <div className="bg-purple-600 px-3 py-1 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <p className="text-white text-sm font-bold">
+              <div className="bg-purple-600 px-3 py-1 border-2 card">
+                <p className="text-white text-sm pixel-font font-bold">
                   🎮 Gamedev Bogor
                 </p>
               </div>
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
           {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="border-4 border-black border-t-0 bg-blue-500">
-              <nav className="flex flex-col p-2 gap-2">
+              <nav className="flex flex-col p-2 gap-2 pixel-font">
                 <Link 
                   to="/" 
                   className="bg-green-400 hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
