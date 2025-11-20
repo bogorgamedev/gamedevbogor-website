@@ -66,7 +66,7 @@ export default function Hero() {
               </div>
             </div>
             
-            {/* Title - Responsive */}
+            {/* Title*/}
             <h1 className="font-bold tracking-tight pixel-font">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 animate-game-text text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                 GAME DEVELOPER
@@ -110,7 +110,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Image Slider */}
           <div className="relative animate-float order-1 lg:order-2">
             <div className="bg-purple-400 p-4 sm:p-6 border-4 card">
               <div className="bg-gray-800 border-2 border-black p-3 sm:p-4 aspect-square flex items-center justify-center overflow-hidden relative">
@@ -128,8 +127,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            
-            {/* Floating Elements - Hide on smallest screens */}
             <div className="hidden sm:block absolute -top-3 -right-3 sm:-top-4 sm:-right-4 bg-red-500 w-6 h-6 sm:w-8 sm:h-8 border-2 border-black animate-bounce"></div>
             <div className="hidden sm:block absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 bg-yellow-400 w-4 h-4 sm:w-6 sm:h-6 border-2 border-black animate-bounce" style={{animationDelay: '0.2s'}}></div>
             <div className="hidden sm:block absolute top-1/2 -right-4 sm:-right-6 bg-blue-400 w-3 h-3 sm:w-4 sm:h-4 border-2 border-black animate-ping"></div>
@@ -137,12 +134,10 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* Sosmed Modal - Responsive */}
+      {/* Sosmed Modal */}
       {isSosmedModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-3 sm:p-4">
           <div className="bg-white border-4 border-black card-bold max-w-xs sm:max-w-sm md:max-w-md w-full mx-auto">
-            
-            {/* Modal Header */}
             <div className="bg-blue-500 p-3 sm:p-4 border-b-4 border-black">
               <div className="flex justify-between items-center">
                 <h2 className="text-white font-bold text-lg sm:text-xl pixel-font text-center flex-1">
