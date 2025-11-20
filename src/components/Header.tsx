@@ -46,21 +46,21 @@ const Header: React.FC = () => {
         <div className="md:hidden">
           <div className="flex justify-between items-center px-4 py-3 border-4 border-black bg-blue-500">
             <Link to="/">
-              <div className="bg-purple-600 px-3 py-1 border-2 card">
-                <p className="text-white text-sm pixel-font font-bold">
-                  🎮 Gamedev Bogor
+              <div className="bg-white px-3 py-1 border-2 card">
+                <p className="text-black text-sm pixel-font font-bold">
+                  Gamedev Bogor
                 </p>
               </div>
             </Link>
 
             <button
-              className="bg-red-500 hover:bg-yellow-300 border-2 border-black w-10 h-10 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-2px] transition-all"
+              className="bg-white hover:bg-yellow-300 border-2 border-black w-10 h-10 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-2px] transition-all"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <div className="w-5 h-5 flex flex-col justify-between">
-                <span className={`w-full h-[3px] bg-white ${isMenuOpen ? "rotate-45 translate-y-[7px]" : ""} transition-all`}></span>
-                <span className={`w-full h-[3px] bg-white ${isMenuOpen ? "opacity-0" : ""} transition-all`}></span>
-                <span className={`w-full h-[3px] bg-white ${isMenuOpen ? "-rotate-45 -translate-y-[7px]" : ""} transition-all`}></span>
+                <span className={`w-full h-[3px] bg-black ${isMenuOpen ? "rotate-45 translate-y-[7px]" : ""} transition-all`}></span>
+                <span className={`w-full h-[3px] bg-black ${isMenuOpen ? "opacity-0" : ""} transition-all`}></span>
+                <span className={`w-full h-[3px] bg-black ${isMenuOpen ? "-rotate-45 -translate-y-[7px]" : ""} transition-all`}></span>
               </div>
             </button>
           </div>
@@ -71,21 +71,21 @@ const Header: React.FC = () => {
               <nav className="flex flex-col p-2 gap-2 pixel-font">
                 <Link 
                   to="/" 
-                  className="bg-green-400 hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
+                  className="bg-white hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   HOME
                 </Link>
                 <Link 
                   to="/Games" 
-                  className="bg-green-400 hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
+                  className="bg-white hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   GAMES
                 </Link>
                 <Link 
                   to="/Contact" 
-                  className="bg-green-400 hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
+                  className="bg-white hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   CONTACT
