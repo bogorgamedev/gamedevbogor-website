@@ -1,1 +1,270 @@
 @import "tailwindcss";
+@import "retlan-ui/styles/base.css";
+
+@keyframes retro-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  75% { transform: translateX(3px); }
+}
+
+@utility retro-shake {
+  animation: retro-shake 0.35s steps(2) infinite;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.pixelated {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/*Text Animation */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #8B5CF6;
+  }
+}
+
+/* Pixel Glitch Effect */
+@keyframes pixelGlitch {
+  0% {
+    transform: translate(0);
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+  5% {
+    transform: translate(-2px, 1px);
+    text-shadow: 2px 0 0 #EF4444;
+  }
+  10% {
+    transform: translate(2px, -1px);
+    text-shadow: -2px 0 0 #10B981;
+  }
+  15% {
+    transform: translate(-1px, 2px);
+  }
+  20% {
+    transform: translate(1px, -2px);
+  }
+  25% {
+    transform: translate(0);
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+  100% {
+    transform: translate(0);
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+}
+
+/* Pixel Dance Animation */
+@keyframes pixelDance {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  75% {
+    transform: translateY(5px) rotate(-1deg);
+  }
+}
+
+/* Apply Animations */
+.animate-game-text {
+  animation: retroText 1.5s ease-out forwards;
+  display: inline-block;
+  position: relative;
+}
+
+.animate-game-text::after {
+  content: '|';
+  position: absolute;
+  right: -10px;
+  animation: blinkCursor 0.8s infinite;
+}
+
+.animate-pixel-glitch {
+  animation: pixelGlitch 4s infinite;
+  display: inline-block;
+  position: relative;
+}
+
+/* Character by Character Animation */
+
+.pixel-font {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Hover Effects */
+.animate-game-text:hover {
+  animation: pixelDance 0.5s ease-in-out;
+}
+
+.animate-pixel-glitch:hover {
+  animation: pixelGlitch 0.8s infinite;
+}
+
+ /* Pixel Pop Up Animation */
+        @keyframes pixelPop {
+          0% {
+            transform: translateY(0) scale(0);
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(-20px) scale(1.2);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(-40px) scale(0);
+            opacity: 0;
+          }
+        }
+
+        /* Pixel Bounce Animation */
+        @keyframes pixelBounce {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          25% {
+            transform: translateY(-8px);
+          }
+          50% {
+            transform: translateY(-4px);
+          }
+          75% {
+            transform: translateY(-6px);
+          }
+        }
+
+        /* Pixel Float Animation */
+        @keyframes pixelFloat {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-6px);
+          }
+        }
+
+        /* Pixel Spin Animation */
+        @keyframes pixelSpin {
+          0% {
+            transform: rotate(0deg) scale(1);
+          }
+          50% {
+            transform: rotate(180deg) scale(1.1);
+          }
+          100% {
+            transform: rotate(360deg) scale(1);
+          }
+        }
+
+        /* Pixel Shake Animation */
+        @keyframes pixelShake {
+          0%, 100% {
+            transform: translateX(0);
+          }
+          25% {
+            transform: translateX(-2px);
+          }
+          75% {
+            transform: translateX(2px);
+          }
+        }
+
+        /* Pixel Slide Animation */
+        @keyframes pixelSlide {
+          0%, 100% {
+            transform: translateX(0);
+            opacity: 0.5;
+          }
+          50% {
+            transform: translateX(10px);
+            opacity: 1;
+          }
+        }
+
+        /* Pixel Pulse Animation */
+        @keyframes pixelPulse {
+          0%, 100% {
+            transform: scale(1);
+            box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+          }
+          50% {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+          }
+        }
+
+        /* Text Glow Animation */
+        @keyframes textGlow {
+          0%, 100% {
+            text-shadow: 0 0 5px rgba(255,255,255,0.5);
+          }
+          50% {
+            text-shadow: 0 0 15px rgba(255,255,255,0.8);
+          }
+        }
+        .animate-pixel-pop {
+          animation: pixelPop infinite ease-in-out;
+        }
+
+        .animate-pixel-bounce {
+          animation: pixelBounce 0.6s ease-in-out;
+        }
+
+        .animate-pixel-float {
+          animation: pixelFloat 3s ease-in-out infinite;
+        }
+
+        .animate-pixel-spin {
+          animation: pixelSpin 0.8s ease-in-out;
+        }
+
+        .animate-pixel-shake {
+          animation: pixelShake 0.5s ease-in-out;
+        }
+
+        .animate-pixel-slide {
+          animation: pixelSlide 1.5s ease-in-out infinite;
+        }
+
+        .animate-pixel-pulse {
+          animation: pixelPulse 1s ease-in-out;
+        }
+
+        .animate-text-glow {
+          animation: textGlow 2s ease-in-out infinite;
+        }
