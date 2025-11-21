@@ -41,17 +41,17 @@ const Footer: React.FC = () => {
               {[
                 { 
                   icon: FaDiscord, 
-                  href: "https://discord.gg/example", 
+                  href: "https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys", 
                   bg: "bg-[#5865F2]"
                 },
                 { 
                   icon: FaWhatsapp, 
-                  href: "https://wa.me/example", 
+                  href: "https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys", 
                   bg: "bg-[#25D366]"
                 },
                 { 
                   icon: FaInstagram, 
-                  href: "https://instagram.com/example", 
+                  href: "https://www.instagram.com/gamedevbogor/", 
                   bg: "bg-[#E4405F]"
                 }
               ].map((social, index) => (

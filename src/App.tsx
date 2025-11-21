@@ -9,7 +9,7 @@ import GamesPage from "./pages/GamePage";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white bg-grid">
+      <div className="min-h-screen bg-white bg-grid bg-grid-blue">
         <Header/>
         
         <Routes>
