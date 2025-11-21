@@ -58,7 +58,6 @@ export default function Hero() {
       <section className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-8 py-8 sm:py-10 lg:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           
-          {/* Text Content */}
           <div className="space-y-4 sm:space-y-6 animate-fade-in order-2 lg:order-1">
             <div className="inline-block">
               <div className="bg-yellow-300 px-3 sm:px-4 py-1 sm:py-2 border-2 card">
@@ -83,7 +82,6 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* Buttons - Responsive Stack */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-3 sm:pt-4">
               <a 
                 href="https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys" 

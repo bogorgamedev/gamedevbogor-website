@@ -1,29 +1,33 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import GameShowcase from "./components/GameShowcase";
+import GameDetailPage from "./pages/GameDetailPage";
+import GamesPage from "./pages/GamePage";
 
 function App() {
   return (
-     <Router>
-      <div className="min-h-screen bg-grid bg-grid-blue bg-white">
+    <Router>
+      <div className="min-h-screen bg-white bg-grid">
         <Header/>
         
         <Routes>
           <Route path="/" element={
             <div className="flex flex-col items-center justify-center gap-6 p-6">
               <Hero/>
+              <GameShowcase limit={6} />
             </div>
           } />
-          {/* Route untuk Components */}
-          {/* <Route path="/components" element={<Components />} />
-          <Route path="/installation" element={<Installation />} /> */}
+          
+          <Route path="/games" element={<GamesPage />} />
+          
+          <Route path="/games/:gameId" element={<GameDetailPage />} />
         </Routes>
+        
+        <Footer/>
       </div>
-       <Footer/>
     </Router>
-   
   );
 }
 

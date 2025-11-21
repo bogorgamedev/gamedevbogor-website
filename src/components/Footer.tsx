@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                   href={social.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className={`${social.bg} w-12 h-12 border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center animate-pixel-float hover:animate-pixel-spin transition-all duration-500 group`}
+                  className={`${social.bg} w-12 h-12 border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center hover:animate-pixel-spin transition-all duration-500 group`}
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <social.icon className="text-white text-xl group-hover:animate-ping transition-transform" />

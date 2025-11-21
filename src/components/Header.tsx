@@ -32,12 +32,7 @@ const Header: React.FC = () => {
             >
               GAMES
             </Link>
-            <Link 
-              to="/Contact" 
-              className="bg-gray-100 hover:bg-yellow-300 text-black px-10 py-2 btn font-bold "
-            >
-              CONTACT
-            </Link>
+            
           </nav>
 
         </div>
@@ -83,13 +78,7 @@ const Header: React.FC = () => {
                 >
                   GAMES
                 </Link>
-                <Link 
-                  to="/Contact" 
-                  className="bg-white hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  CONTACT
-                </Link>
+                
               </nav>
             </div>
           )}
