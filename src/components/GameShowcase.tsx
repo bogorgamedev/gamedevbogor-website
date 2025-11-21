@@ -37,7 +37,7 @@ const GameShowcase: React.FC<GameShowcaseProps> = ({ limit }) => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-        {gamesToShow.map((game, index) => (
+        {gamesToShow.map((game) => (
           <Link
             key={game.id}
             to={game.route}
