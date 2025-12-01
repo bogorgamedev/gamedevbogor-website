@@ -143,7 +143,7 @@ export default function Hero() {
                 </h2>
                 <button 
                   onClick={() => setIsSosmedModalOpen(false)}
-                  className="bg-red-500 hover:bg-red-600 text-white w-7 h-7 sm:w-8 sm:h-8 border-2 border-black flex items-center justify-center font-bold hover:scale-110 transition-transform text-sm sm:text-base ml-2"
+                  className="bg-red-500 hover:bg-red-600 text-white w-7 h-7 sm:w-8 sm:h-8 border-2 border-black flex items-center justify-center font-bold hover:scale-110 transition-transform text-sm sm:text-base ml-2 cursor-pointer"
                 >
                   ✕
                 </button>

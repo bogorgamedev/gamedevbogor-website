@@ -43,7 +43,7 @@ const GameShowcase: React.FC<GameShowcaseProps> = ({ limit }) => {
             to={game.route}
             className="group block"
           >
-            <div className="relative bg-gray-800 overflow-hidden border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 transition-all duration-300 aspect-[4/3]">
+            <div className="relative bg-gray-800 overflow-hidden btn hover:-translate-y-2 transition-all duration-300 aspect-[4/3]">
               <img
                 src={game.image}
                 alt={game.title}

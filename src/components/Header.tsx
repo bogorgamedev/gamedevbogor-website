@@ -27,12 +27,17 @@ const Header: React.FC = () => {
               HOME
             </Link>
             <Link 
-              to="/Games" 
+              to="/games" 
               className="bg-gray-100 hover:bg-yellow-300 text-black px-4 py-2 btn font-bold"
             >
               GAMES
             </Link>
-            
+           <Link 
+              to="/events" 
+              className="bg-gray-100 hover:bg-yellow-300 text-black px-4 py-2 btn font-bold"
+            >
+              Event 
+            </Link>
           </nav>
 
         </div>

@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                 },
                 { 
                   icon: FaWhatsapp, 
-                  href: "https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys", 
+                  href: "https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys   ", 
                   bg: "bg-[#25D366]"
                 },
                 { 
