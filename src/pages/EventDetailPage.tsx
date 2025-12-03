@@ -238,52 +238,6 @@ const EventDetailPage = () => {
         </div>
 
       </div>
-
-      <style jsx>{`
-        @keyframes pixelPop {
-          0% {
-            opacity: 0;
-            transform: scale(0.8) translateY(20px);
-          }
-          70% {
-            transform: scale(1.05) translateY(-5px);
-          }
-          100% {
-            opacity: 1;
-            transform: scale(1) translateY(0);
-          }
-        }
-
-        @keyframes pixelFloat {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-6px);
-          }
-        }
-
-        @keyframes pixelPulse {
-          0%, 100% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.02);
-          }
-        }
-
-        .animate-pixel-pop {
-          animation: pixelPop 0.6s ease-out forwards;
-        }
-
-        .animate-pixel-float {
-          animation: pixelFloat 3s ease-in-out infinite;
-        }
-
-        .animate-pixel-pulse {
-          animation: pixelPulse 2s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   );
 };
