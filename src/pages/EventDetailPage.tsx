@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import eventsData from "../data/eventData";
 
-import img1 from "../assets/Logo_bogor.png"
-
 const EventDetailPage = () => {
   const { eventId } = useParams();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
