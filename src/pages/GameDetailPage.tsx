@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-
+import sampleGames from "../data/GamesData";
 
 const GameDetailPage: React.FC = () => {
   const { gameId } = useParams<{ gameId: string }>();
