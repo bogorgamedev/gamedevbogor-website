@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import img1 from "../assets/example.jpeg";
 import img2 from "../assets/example2.jpeg";
-import img3 from "../assets/logo.png";
+import img3 from "../assets/Logo_bogor.png";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 

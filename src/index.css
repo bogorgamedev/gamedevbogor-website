@@ -357,3 +357,120 @@ effect text writer */
         .animate-pixel-pulse {
           animation: pixelPulse 2s ease-in-out infinite;
         }
+
+         @keyframes pixelPopUp {
+          0% {
+            transform: translateY(0) scale(0);
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(-20px) scale(1.2);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(-40px) scale(0);
+            opacity: 0;
+          }
+        }
+
+        @keyframes pixelBounce {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          25% {
+            transform: translateY(-8px);
+          }
+          50% {
+            transform: translateY(-4px);
+          }
+          75% {
+            transform: translateY(-6px);
+          }
+        }
+
+        @keyframes pixelShake {
+          0%, 100% {
+            transform: translateX(0);
+          }
+          25% {
+            transform: translateX(-3px);
+          }
+          75% {
+            transform: translateX(3px);
+          }
+        }
+
+        @keyframes pixelFloat {
+          0%, 100% {
+            transform: translateY(0) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-10px) rotate(5deg);
+          }
+        }
+
+        @keyframes pixelSpin {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes textGlow {
+          0%, 100% {
+            text-shadow: 0 0 5px rgba(255,255,255,0.5);
+          }
+          50% {
+            text-shadow: 0 0 15px rgba(255,255,255,0.8);
+          }
+        }
+
+        /* Alternative animations */
+        @keyframes pixelSlide {
+          0% {
+            transform: translateX(-20px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        @keyframes pixelPulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+
+        @keyframes pixelRain {
+          0% {
+            transform: translateY(-100px) rotate(0deg);
+          }
+          100% {
+            transform: translateY(100vh) rotate(360deg);
+          }
+        }
+
+        @keyframes pixelGlitch {
+          0%, 100% {
+            transform: translate(0);
+          }
+          20% {
+            transform: translate(-2px, 2px);
+          }
+          40% {
+            transform: translate(-2px, -2px);
+          }
+          60% {
+            transform: translate(2px, 2px);
+          }
+          80% {
+            transform: translate(2px, -2px);
+          }
+        }
