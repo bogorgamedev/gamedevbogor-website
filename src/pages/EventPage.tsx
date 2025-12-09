@@ -17,7 +17,7 @@ const EventsPage = () => {
               EVENTS
             </h1>
           </div>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="font-mono text-gray-600 text-lg max-w-2xl mx-auto">
             Join our game development events, workshops, and jams. Learn, create, and connect with fellow developers.
           </p>
         </div>
@@ -47,21 +47,21 @@ const EventsPage = () => {
                   </div>
 
                   <div className="p-4 space-y-3">
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed font-mono">
                       {event.shortDescription}
                     </p>
                     
-                    <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center justify-between text-sm font-mono">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-green-500 border border-black"></div>
                         <span className="text-gray-700 font-bold">Date : {event.date}</span>
                       </div>
                       <div className="bg-yellow-400 px-2 py-1 btn border-black">
-                        <span className="text-black font-bold text-xs">COMING SOON</span>
+                        <span className="text-black font-bold text-xs font-mono">COMING SOON</span>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm">
+                    <div className="flex items-center gap-2 text-sm font-mono">
                       <div className="w-2 h-2 bg-blue-500 border border-black"></div>
                       <span className="text-gray-700"> Location : {event.location}</span>
                     </div>
@@ -97,23 +97,23 @@ const EventsPage = () => {
                   </div>
 
                   <div className="p-4 space-y-3">
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed font-mono">
                       {event.shortDescription}
                     </p>
                     
                     <div className="flex items-center justify-between text-sm">
                       <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-red-500 border border-black"></div>
+                        <div className="w-2 h-2 bg-red-500 border border-black font-mono"></div>
                         <span className="text-gray-700 font-bold">Date : {event.date}</span>
                       </div>
-                      <div className="bg-green-500 px-2 py-1 border btn border-black">
+                      <div className="bg-green-500 px-2 py-1 border btn border-black font-mono">
                         <span className="text-black font-bold text-xs">COMPLETED</span>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm">
+                    <div className="flex items-center gap-2 text-sm font-mono">
                       <div className="w-2 h-2 bg-blue-500 border border-black"></div>
-                      <span className="text-gray-700">{event.participants}+ Participants</span>
+                      <span className="text-gray-700 font-bold">{event.participants}+ Participants</span>
                     </div>
                   </div>
                 </div>

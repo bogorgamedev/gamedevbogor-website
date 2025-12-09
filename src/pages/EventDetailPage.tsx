@@ -41,10 +41,10 @@ const EventDetailPage = () => {
               <span className="text-2xl">⚠️</span>
             </div>
             <h1 className="text-2xl font-bold pixel-font text-gray-800 mb-2">EVENT NOT FOUND</h1>
-            <p className="text-gray-600 mb-6">The event you're looking for doesn't exist.</p>
+            <p className="text-gray-600 mb-6 font-mono">The event you're looking for doesn't exist.</p>
             <Link 
               to="/events" 
-              className="inline-flex items-center gap-2 btn-bold bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 border-2 border-black font-bold transition-all hover:scale-105"
+              className="inline-flex items-center gap-2 btn-bold bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 border-2 border-black font-bold transition-all hover:scale-105 font-mono"
             >
               ← BACK TO EVENTS
             </Link>
@@ -61,7 +61,7 @@ const EventDetailPage = () => {
         <div className={`mb-8 transition-all duration-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
           <Link 
             to="/events" 
-            className="inline-flex items-center btn gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 border-2 border-black font-bold transition-all hover:scale-105"
+            className="font-mono inline-flex items-center btn gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 border-2 border-black font-bold transition-all hover:scale-105"
           >
             ← BACK TO EVENTS
           </Link>
@@ -78,7 +78,7 @@ const EventDetailPage = () => {
                   </div>
                 </div>
 
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1 text-center lg:text-left font-mono">
                   <h1 className="text-3xl lg:text-4xl font-bold pixel-font text-gray-800 mb-4 leading-tight">
                     {event.title}
                   </h1>
@@ -171,7 +171,7 @@ const EventDetailPage = () => {
               <div className="bg-purple-600 btn  inline-block px-4 py-2 mb-4 hover:scale-105 transition-transform duration-200">
                 <h2 className="text-white font-bold text-xl pixel-font">ABOUT THIS EVENT</h2>
               </div>
-              <p className="text-gray-800 leading-relaxed text-lg">
+              <p className="text-gray-800 leading-relaxed text-lg font-mono">
                 {event.longDescription || event.description}
               </p>
             </div>
@@ -183,7 +183,7 @@ const EventDetailPage = () => {
                 <h3 className="text-white font-bold pixel-font">EVENT DETAILS</h3>
               </div>
               
-              <div className="space-y-4">
+              <div className="space-y-4 font-mono">
                 <div className="flex items-center gap-3 p-3 bg-gray-50 border-2 border-gray-200 hover:border-blue-400 transition-all duration-200">
                   <div className="w-3 h-3 bg-blue-500 border border-black"></div>
                   <div>
@@ -221,7 +221,7 @@ const EventDetailPage = () => {
             </div>
 
             {event.status === 'coming-soon' && event.registerLink && (
-              <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`} style={{ transitionDelay: '500ms' }}>
+              <div className={`font-mono transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`} style={{ transitionDelay: '500ms' }}>
                 <a 
                   href={event.registerLink}
                   target="_blank"

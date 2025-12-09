@@ -61,7 +61,7 @@ export default function Hero() {
           <div className="space-y-4 sm:space-y-6 animate-fade-in order-2 lg:order-1">
             <div className="inline-block">
               <div className="bg-yellow-300 px-3 sm:px-4 py-1 sm:py-2 border-2 card">
-                <p className="text-black font-bold text-xs sm:text-sm">Welcome to</p>
+                <p className="text-black font-mono font-bold text-xs sm:text-sm">Welcome to</p>
               </div>
             </div>
             
@@ -88,7 +88,7 @@ export default function Hero() {
                 href="https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
+                className="bg-blue-500 font-mono hover:bg-blue-600 text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
               >
                 JOIN OUR DISCORD
               </a>
@@ -96,13 +96,13 @@ export default function Hero() {
                 href="https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
+                className="bg-green-500 hover:bg-green-600 font-mono text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
               >
                 WHATSAPP GRUB
               </a>
               <button 
                 onClick={handleSosmedClick}
-                className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
+                className="bg-yellow-500 hover:bg-yellow-600 font-mono text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
               >
                 MORE
               </button>
@@ -135,7 +135,7 @@ export default function Hero() {
 
       {/* Sosmed Modal */}
       {isSosmedModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-3 sm:p-4">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-3 sm:p-4 font-mono">
           <div className="bg-white border-4 border-black card-bold max-w-xs sm:max-w-sm md:max-w-md w-full mx-auto">
             <div className="bg-blue-500 p-3 sm:p-4 border-b-4 border-black">
               <div className="flex justify-between items-center">

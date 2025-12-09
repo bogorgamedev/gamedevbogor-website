@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
             >
               <h3 className="text-black font-bold text-xl pixel-font tracking-wide">GAMEDEV BOGOR</h3>
             </div>
-            <p className="text-lg font-sans text-white/90 max-w-md ">
+            <p className="text-lg font-mono text-white/90 max-w-md ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             </p>
           </div>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
               className="inline-block bg-green-500 px-4 py-2 border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] mb-4 hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] transition-all duration-300 cursor-pointer"
               
             >
-              <h4 className="font-bold font-sans text-sm uppercase tracking-wide">Join Our Community</h4>
+              <h4 className="font-bold font-mono text-sm uppercase tracking-wide">Join Our Community</h4>
             </div>
             <div className="flex justify-center md:justify-end space-x-4">
               {[
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
         
         <div className="text-center">
           <p 
-            className="text-gray-900 text-sm font-bold flex items-center justify-center space-x-2"
+            className="text-gray-900 text-sm font-bold flex items-center justify-center space-x-2 font-mono"
            
           >
             <span>© 2024 GAMEDEV BOGOR</span>

@@ -67,7 +67,7 @@ const GameDetailPage: React.FC = () => {
               </h1>
             </div>
 
-            <div className="flex flex-wrap gap-3 items-center">
+            <div className="flex flex-wrap gap-3 items-center font-mono">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-blue-500 border border-black"></div>
                 <span className="text-gray-800 font-bold">by {game.developer}</span>
@@ -85,7 +85,7 @@ const GameDetailPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href={game.downloadLink || "#"}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 btn font-bold text-center transition-all hover:scale-105 hover:-translate-y-1 flex-1 animate-pixel-pulse"
+                className="font-mono bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 btn font-bold text-center transition-all hover:scale-105 hover:-translate-y-1 flex-1 "
               >
                 DOWNLOAD
               </a>
@@ -96,8 +96,8 @@ const GameDetailPage: React.FC = () => {
           <div className="bg-purple-600 btn inline-block px-4 py-2 mb-4">
             <h2 className="text-white font-bold text-xl pixel-font">ABOUT THIS GAME</h2>
           </div>
-          <p className="text-gray-800 leading-relaxed text-lg">
-            {game.longDescription || `Dive deeper into the world of ${game.title}. ${game.description} Experience thrilling gameplay, stunning pixel art, and immersive sound design that will keep you engaged for hours. Developed with passion by ${game.developer}, this game represents the best of indie game development.`}
+          <p className="text-gray-800 leading-relaxed text-lg font-mono">
+            {game.longDescription }
           </p>
         </div>
 
