@@ -30,8 +30,8 @@ const GameShowcase: React.FC<GameShowcaseProps> = ({ limit }) => {
         </div>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
           {limit 
-            ? "Lorem ipsum dolor sit amet consectetur adipisicing elit." 
-            : "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            ? "Check out the games produced by our members" 
+            : "Check out the games produced by our members"
           }
         </p>
       </div>

@@ -78,7 +78,8 @@ export default function Hero() {
             {/* Description */}
             <div className="bg-green-300 p-4 sm:p-6 border-4 card-bold">
               <p className="text-gray-800 text-sm sm:text-base lg:text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam reiciendis quisquam soluta similique odio, dolore consequuntur nostrum fuga distinctio ducimus debitis porro saepe possimus magnam recusandae? Officiis, doloremque. Culpa?
+                
+              <b>Game Developer Bogor</b> (GDB) is here as a community that encourages creativity and innovation in the field of game development. Our mission is to connect local game developers, facilitate learning, and create game works that impact and make the city of Bogor proud.
               </p>
             </div>
 
