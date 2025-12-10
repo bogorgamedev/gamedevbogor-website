@@ -46,7 +46,9 @@ const Header: React.FC = () => {
 
         {/* Mobile */}
         <div className="md:hidden">
-          <div className="flex justify-between items-center px-4 py-3 border-4 border-black bg-blue-500">
+          <div className="flex justify-between items-center px-4 py-3 border-4 border-black"
+              style={{backgroundColor : "#383bb4"}}
+          >
             <Link to="/">
               <div className="bg-white px-3 py-1 border-2 card">
                 <p className="text-black text-sm pixel-font font-bold">
@@ -56,7 +58,7 @@ const Header: React.FC = () => {
             </Link>
 
             <button
-              className="bg-white hover:bg-yellow-300 border-2 border-black w-10 h-10 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-2px] transition-all"
+              className="bg-white hover:bg-green-400 border-2 border-black w-10 h-10 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-2px] transition-all"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <div className="w-5 h-5 flex flex-col justify-between">
