@@ -3,7 +3,9 @@ import { FaDiscord, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-10 px-5 py-8 bg-blue-500 text-white border-t-4 border-black relative overflow-hidden">
+    <footer className="mt-10 px-5 py-8 text-white border-t-4 border-black relative overflow-hidden"
+    style={{backgroundColor : "#383bb4"}}
+    >
       {/* Animated Pixel Particles */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(12)].map((_, i) => (
