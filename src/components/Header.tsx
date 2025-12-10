@@ -78,14 +78,21 @@ const Header: React.FC = () => {
                   className="bg-white hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  HOME
+                  Home
                 </Link>
                 <Link 
-                  to="/Games" 
+                  to="/games" 
                   className="bg-white hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  GAMES
+                  Games
+                </Link>
+                <Link 
+                  to="/events" 
+                  className="bg-white hover:bg-yellow-300 text-black px-4 py-3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center font-bold hover:translate-x-[2px] transition-all"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Event
                 </Link>
                 
               </nav>
