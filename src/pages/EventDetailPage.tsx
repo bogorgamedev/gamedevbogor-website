@@ -34,7 +34,9 @@ const EventDetailPage = () => {
 
   if (!event) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+      <div className="min-h-screen flex items-center justify-center px-4"
+      style={{backgroundColor: "#30339b"}}
+      >
         <div className="text-center max-w-md w-full">
           <div className="bg-white border-4 card p-8 animate-pixel-pop">
             <div className="w-16 h-16 bg-red-500 border-2 border-black flex items-center justify-center mx-auto mb-4 animate-bounce">
@@ -44,7 +46,7 @@ const EventDetailPage = () => {
             <p className="text-gray-600 mb-6 font-mono">The event you're looking for doesn't exist.</p>
             <Link 
               to="/events" 
-              className="inline-flex items-center gap-2 btn-bold bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 border-2 border-black font-bold transition-all hover:scale-105 font-mono"
+              className="inline-flex items-center gap-2 btn-bold bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 border-2 border-black font-bold transition-all hover:scale-105 font-mono"
             >
               ← BACK TO EVENTS
             </Link>
@@ -55,13 +57,15 @@ const EventDetailPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen py-8"
+    style={{backgroundColor: "#30339b"}}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
  
         <div className={`mb-8 transition-all duration-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
           <Link 
             to="/events" 
-            className="font-mono inline-flex items-center btn gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 border-2 border-black font-bold transition-all hover:scale-105"
+            className="font-mono inline-flex items-center btn gap-2 bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 border-2 border-black font-bold transition-all hover:scale-105"
           >
             ← BACK TO EVENTS
           </Link>
@@ -73,7 +77,7 @@ const EventDetailPage = () => {
             <div className={`bg-white card p-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-24 h-24 bg-purple-500 btn-bold flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                  <div className="w-24 h-24 bg-blue-800 btn-bold flex items-center justify-center hover:scale-105 transition-transform duration-300">
                     <img src={event.logo} alt={event.logo} />
                   </div>
                 </div>
@@ -168,7 +172,7 @@ const EventDetailPage = () => {
             )}
 
             <div className={`bg-white card p-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '400ms' }}>
-              <div className="bg-purple-600 btn  inline-block px-4 py-2 mb-4 hover:scale-105 transition-transform duration-200">
+              <div className="bg-blue-700 btn  inline-block px-4 py-2 mb-4 hover:scale-105 transition-transform duration-200">
                 <h2 className="text-white font-bold text-xl pixel-font">ABOUT THIS EVENT</h2>
               </div>
               <p className="text-gray-800 leading-relaxed text-lg font-mono">

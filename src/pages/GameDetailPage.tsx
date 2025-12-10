@@ -9,7 +9,9 @@ const GameDetailPage: React.FC = () => {
   
   if (!game) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+      <div className="min-h-screen flex items-center justify-center px-4"
+      style={{backgroundColor:"#30339b"}}
+      >
         <div className="text-center max-w-md w-full">
           <div className="bg-white card-bold p-8">
             <div className="w-16 h-16 bg-red-500 border-2 border-black flex items-center justify-center mx-auto mb-4">
@@ -34,7 +36,9 @@ const GameDetailPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 ">
+    <div className="min-h-screen py-8 "
+    style={{backgroundColor: "#30339b"}}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="mb-8">
@@ -49,7 +53,9 @@ const GameDetailPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         
           <div className="relative">
-            <div className="bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-4 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all duration-300">
+            <div className="border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-4 hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transition-all duration-300"
+            style={{backgroundColor:"#00ff7f"}}
+            >
               <img
                 src={game.image}
                 alt={game.title}
@@ -62,7 +68,7 @@ const GameDetailPage: React.FC = () => {
 
           <div className="space-y-6">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-5xl font-bold pixel-font text-gray-800 leading-tight">
+              <h1 className="text-4xl lg:text-5xl font-bold pixel-font text-gray-100 leading-tight">
                 {game.title}
               </h1>
             </div>
@@ -70,22 +76,22 @@ const GameDetailPage: React.FC = () => {
             <div className="flex flex-wrap gap-3 items-center font-mono">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-blue-500 border border-black"></div>
-                <span className="text-gray-800 font-bold">by {game.developer}</span>
+                <span className="text-gray-100 font-bold">by {game.developer}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 border border-black"></div>
-                <span className="text-gray-800 font-bold">{game.category}</span>
+                <span className="text-gray-100 font-bold">{game.category}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-purple-500 border border-black"></div>
-                <span className="text-gray-800 font-bold">PC</span>
+                <span className="text-gray-100 font-bold">PC</span>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href={game.downloadLink || "#"}
-                className="font-mono bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 btn font-bold text-center transition-all hover:scale-105 hover:-translate-y-1 flex-1 "
+                className="font-mono bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 btn font-bold text-center transition-all hover:scale-105 hover:-translate-y-1 flex-1 "
               >
                 DOWNLOAD
               </a>
@@ -93,7 +99,7 @@ const GameDetailPage: React.FC = () => {
           </div>
         </div>
         <div className="bg-white card-bold p-6 mb-8">
-          <div className="bg-purple-600 btn inline-block px-4 py-2 mb-4">
+          <div className="bg-blue-700 btn inline-block px-4 py-2 mb-4">
             <h2 className="text-white font-bold text-xl pixel-font">ABOUT THIS GAME</h2>
           </div>
           <p className="text-gray-800 leading-relaxed text-lg font-mono">

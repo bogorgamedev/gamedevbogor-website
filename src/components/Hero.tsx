@@ -115,7 +115,7 @@ export default function Hero() {
 
           <div className="relative animate-float order-1 lg:order-2">
             <div className="p-4 sm:p-6 border-4 card"
-            style={{backgroundColor: "#383bb4"}}
+            style={{backgroundColor: "#00ff7f"}}
             >
               <div className="bg-gray-800 border-2 border-black p-3 sm:p-4 aspect-square flex items-center justify-center overflow-hidden relative">
                 <div className="relative w-full h-full">

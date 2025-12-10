@@ -12,7 +12,9 @@ const GameShowcase: React.FC<GameShowcaseProps> = ({ limit }) => {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-12">
-        <div className="inline-block bg-purple-600 px-9 py-3 btn mb-4">
+        <div className="inline-block  px-9 py-3 btn mb-4"
+        style={{backgroundColor:"#00ff7f"}}
+        >
       <h2 className="text-white font-bold text-2xl pixel-font tracking-wide ">
   {"GAMES".split("").map((char, index) => (
     <span 
@@ -28,7 +30,7 @@ const GameShowcase: React.FC<GameShowcaseProps> = ({ limit }) => {
   ))}
 </h2>
         </div>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto font-mono">
+        <p className="text-gray-100 text-lg max-w-2xl mx-auto font-mono">
           {limit 
             ? "Check out the games produced by our members" 
             : "Check out the games produced by our members"

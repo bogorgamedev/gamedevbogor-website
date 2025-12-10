@@ -7,17 +7,20 @@ const EventsPage = () => {
   const pastEvents = eventsData.filter(event => event.type === 'past');
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen py-8"
+    style={{backgroundColor : "#30339b"}}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block bg-purple-600 px-9 py-3 btn mb-4">
+          <div className="inline-block px-9 py-3 btn mb-4"
+            style={{backgroundColor:"#00ff7f"}}
+          >
             <h1 className="text-white font-bold text-2xl pixel-font tracking-wide">
               EVENTS
             </h1>
           </div>
-          <p className="font-mono text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="font-mono text-gray-100 text-lg max-w-2xl mx-auto">
             Join our game development events, workshops, and jams. Learn, create, and connect with fellow developers.
           </p>
         </div>
@@ -74,7 +77,7 @@ const EventsPage = () => {
 
         {/* Past Events */}
         <section>
-          <div className="bg-green-500 border-2 btn inline-block px-6 py-2 mb-6">
+          <div className="bg-purple-500 border-2 btn inline-block px-6 py-2 mb-6">
             <h2 className="text-white font-bold text-xl pixel-font">PAST EVENTS</h2>
           </div>
           

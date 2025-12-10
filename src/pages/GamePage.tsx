@@ -3,7 +3,9 @@ import GameShowcase from "../components/GameShowcase";
 
 const GamesPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen"
+    style={{backgroundColor:"#30339b"}}
+    >
       <GameShowcase />
     </div>
   );
