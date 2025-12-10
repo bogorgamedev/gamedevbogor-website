@@ -60,9 +60,7 @@ export default function Hero() {
           
           <div className="space-y-4 sm:space-y-6 animate-fade-in order-2 lg:order-1">
             <div className="inline-block">
-              <div className="px-3 sm:px-4 py-1 sm:py-2 border-2 card"
-              style={{backgroundColor: "#00ff7f"}}
-              >
+              <div className="px-3 sm:px-4 py-1 sm:py-2 border-2 card bg-green-400">
                 <p className="text-black font-mono font-bold text-xs sm:text-sm">Welcome to</p>
               </div>
             </div>
@@ -114,9 +112,7 @@ export default function Hero() {
           </div>
 
           <div className="relative animate-float order-1 lg:order-2">
-            <div className="p-4 sm:p-6 border-4 card"
-            style={{backgroundColor: "#00ff7f"}}
-            >
+            <div className="p-4 sm:p-6 border-4 card bg-green-400">
               <div className="bg-gray-800 border-2 border-black p-3 sm:p-4 aspect-square flex items-center justify-center overflow-hidden relative">
                 <div className="relative w-full h-full">
                   {images.map((image, index) => (

@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "retlan-ui/styles/base.css";
 
+body{
+  background-color: #30339b;
+}
+
 @keyframes retro-shake {
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-3px); }

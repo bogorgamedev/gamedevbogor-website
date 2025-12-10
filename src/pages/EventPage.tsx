@@ -13,10 +13,9 @@ const EventsPage = () => {
         
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block px-9 py-3 btn mb-4"
-            style={{backgroundColor:"#00ff7f"}}
+          <div className="inline-block px-9 py-3 btn mb-4 bg-green-400"
           >
-            <h1 className="text-white font-bold text-2xl pixel-font tracking-wide">
+            <h1 className="text-gray-800 font-bold text-2xl pixel-font tracking-wide">
               EVENTS
             </h1>
           </div>
@@ -109,7 +108,7 @@ const EventsPage = () => {
                         <div className="w-2 h-2 bg-red-500 border border-black font-mono"></div>
                         <span className="text-gray-700 font-bold">Date : {event.date}</span>
                       </div>
-                      <div className="bg-green-500 px-2 py-1 border btn border-black font-mono">
+                      <div className="bg-green-400 px-2 py-1 border btn border-black font-mono">
                         <span className="text-black font-bold text-xs">COMPLETED</span>
                       </div>
                     </div>

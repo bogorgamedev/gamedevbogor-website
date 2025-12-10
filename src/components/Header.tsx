@@ -24,19 +24,19 @@ const Header: React.FC = () => {
           <nav className="flex gap-3">
             <Link 
               to="/" 
-              className="bg-gray-100 hover:bg-yellow-300 text-black px-4 py-2 btn font-bold"
+              className="bg-gray-100 hover:bg-green-400 text-black px-4 py-2 btn font-bold"
             >
               HOME
             </Link>
             <Link 
               to="/games" 
-              className="bg-gray-100 hover:bg-yellow-300 text-black px-4 py-2 btn font-bold"
+              className="bg-gray-100 hover:bg-green-400 text-black px-4 py-2 btn font-bold"
             >
               GAMES
             </Link>
            <Link 
               to="/events" 
-              className="bg-gray-100 hover:bg-yellow-300 text-black px-4 py-2 btn font-bold"
+              className="bg-gray-100 hover:bg-green-400 text-black px-4 py-2 btn font-bold"
             >
               Event 
             </Link>

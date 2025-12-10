@@ -12,10 +12,8 @@ const GameShowcase: React.FC<GameShowcaseProps> = ({ limit }) => {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-12">
-        <div className="inline-block  px-9 py-3 btn mb-4"
-        style={{backgroundColor:"#00ff7f"}}
-        >
-      <h2 className="text-white font-bold text-2xl pixel-font tracking-wide ">
+        <div className="inline-block bg-green-400 px-9 py-3 btn mb-4">
+      <h2 className="text-gray-800 font-bold text-2xl pixel-font tracking-wide ">
   {"GAMES".split("").map((char, index) => (
     <span 
       key={index}
@@ -80,7 +78,7 @@ const GameShowcase: React.FC<GameShowcaseProps> = ({ limit }) => {
         <div className="text-center mt-12">
           <Link 
             to="/games"
-            className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold transition-all hover:scale-105 hover:-translate-y-1 inline-block text-lg"
+            className="bg-green-400 hover:bg-green-600 text-gray-800 pixel-font px-8 py-4 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-bold transition-all hover:scale-105 hover:-translate-y-1 inline-block text-lg"
           >
             VIEW ALL GAMES →
           </Link>
