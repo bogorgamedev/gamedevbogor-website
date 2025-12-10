@@ -71,7 +71,9 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="border-4 border-black border-t-0 bg-blue-500">
+            <div className="border-4 border-black border-t-0"
+            style={{backgroundColor : "#383bb4"}}
+            >
               <nav className="flex flex-col p-2 gap-2 pixel-font">
                 <Link 
                   to="/" 
