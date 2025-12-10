@@ -9,7 +9,9 @@ const Header: React.FC = () => {
       <div className="max-w-[1350px] mx-auto">
         
         {/* Desktop */}
-        <div className="hidden md:flex justify-between items-center px-4 py-3 border-4 border-black bg-blue-500 pixel-font">
+        <div className="hidden md:flex justify-between items-center px-4 py-3 border-4 border-black pixel-font"
+        style={{backgroundColor : "#383bb4"}}
+        >
           
           <Link to="/" className="flex items-center">
             <div className="bg-white px-4 py-2 btn">

@@ -13,7 +13,9 @@ import EventDetailPage from "./pages/EventDetailPage";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white bg-grid bg-grid-blue">
+      <div className="min-h-screen bg-grid bg-grid-costume"
+      style={{backgroundColor : "#30339b"}}
+      >
         <Header/>
         
         <Routes>

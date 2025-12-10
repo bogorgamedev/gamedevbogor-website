@@ -60,24 +60,28 @@ export default function Hero() {
           
           <div className="space-y-4 sm:space-y-6 animate-fade-in order-2 lg:order-1">
             <div className="inline-block">
-              <div className="bg-yellow-300 px-3 sm:px-4 py-1 sm:py-2 border-2 card">
+              <div className="px-3 sm:px-4 py-1 sm:py-2 border-2 card"
+              style={{backgroundColor: "#00ff7f"}}
+              >
                 <p className="text-black font-mono font-bold text-xs sm:text-sm">Welcome to</p>
               </div>
             </div>
             
             {/* Title*/}
             <h1 className="font-bold tracking-tight pixel-font">
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 animate-game-text text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-gray-300 animate-game-text text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                 GAME DEVELOPER
               </span>
-              <span className="block text-gray-800 mt-1 sm:mt-2 animate-pixel-glitch text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+              <span className="block text-gray-200 mt-1 sm:mt-2 animate-pixel-glitch text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                 BOGOR
               </span>
             </h1>
 
             {/* Description */}
-            <div className="bg-green-300 p-4 sm:p-6 border-4 card-bold">
-              <p className="text-gray-800 text-sm sm:text-base lg:text-lg leading-relaxed">
+            <div className="p-4 sm:p-6 border-4 card-bold"
+            style={{backgroundColor:"#3338A0"}}
+            >
+              <p className="text-gray-100 text-sm sm:text-base lg:text-lg leading-relaxed">
                 
               <b>Game Developer Bogor</b> (GDB) is here as a community that encourages creativity and innovation in the field of game development. Our mission is to connect local game developers, facilitate learning, and create game works that impact and make the city of Bogor proud.
               </p>
@@ -88,7 +92,7 @@ export default function Hero() {
                 href="https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-blue-500 font-mono hover:bg-blue-600 text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
+                className="bg-blue-600 font-mono hover:bg-blue-800 text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
               >
                 JOIN OUR DISCORD
               </a>
@@ -96,13 +100,13 @@ export default function Hero() {
                 href="https://chat.whatsapp.com/FjFH5H5qAwrKeQo9Zlixys" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 font-mono text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
+                className="bg-green-600 hover:bg-green-800 font-mono text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
               >
                 WHATSAPP GRUB
               </a>
               <button 
                 onClick={handleSosmedClick}
-                className="bg-yellow-500 hover:bg-yellow-600 font-mono text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
+                className="bg-yellow-500 hover:bg-yellow-800 font-mono text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
               >
                 MORE
               </button>
@@ -110,7 +114,9 @@ export default function Hero() {
           </div>
 
           <div className="relative animate-float order-1 lg:order-2">
-            <div className="bg-purple-400 p-4 sm:p-6 border-4 card">
+            <div className="p-4 sm:p-6 border-4 card"
+            style={{backgroundColor: "#383bb4"}}
+            >
               <div className="bg-gray-800 border-2 border-black p-3 sm:p-4 aspect-square flex items-center justify-center overflow-hidden relative">
                 <div className="relative w-full h-full">
                   {images.map((image, index) => (
@@ -137,7 +143,7 @@ export default function Hero() {
       {isSosmedModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-3 sm:p-4 font-mono">
           <div className="bg-white border-4 border-black card-bold max-w-xs sm:max-w-sm md:max-w-md w-full mx-auto">
-            <div className="bg-blue-500 p-3 sm:p-4 border-b-4 border-black">
+            <div className="bg-blue-700 p-3 sm:p-4 border-b-4 border-black">
               <div className="flex justify-between items-center">
                 <h2 className="text-white font-bold text-lg sm:text-xl pixel-font text-center flex-1">
                   Explore Our Social Media
