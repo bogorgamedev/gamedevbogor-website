@@ -26,7 +26,7 @@ const EventsPage = () => {
 
         {/* Upcoming Events */}
         <section className="mb-16">
-          <div className="bg-blue-500 border-2 btn inline-block px-6 py-2 mb-6">
+          <div className="bg-blue-700 border-2 btn inline-block px-6 py-2 mb-6">
             <h2 className="text-white font-bold text-xl pixel-font">UPCOMING EVENTS</h2>
           </div>
           
@@ -76,7 +76,7 @@ const EventsPage = () => {
 
         {/* Past Events */}
         <section>
-          <div className="bg-purple-500 border-2 btn inline-block px-6 py-2 mb-6">
+          <div className="bg-purple-700 border-2 btn inline-block px-6 py-2 mb-6">
             <h2 className="text-white font-bold text-xl pixel-font">PAST EVENTS</h2>
           </div>
           

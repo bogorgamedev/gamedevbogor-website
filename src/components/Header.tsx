@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="max-w-[1350px] mx-auto">
         
         {/* Desktop */}
-        <div className="hidden md:flex justify-between items-center px-4 py-3 border-4 border-black pixel-font"
+        <div className="hidden md:flex justify-between items-center px-4 py-3 border-4 border-black  pixel-font"
         style={{backgroundColor : "#383bb4"}}
         >
           

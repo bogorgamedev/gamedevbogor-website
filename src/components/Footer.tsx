@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
             className="text-gray-900 text-sm font-bold flex items-center justify-center space-x-2 font-mono"
            
           >
-            <span>© 2024 GAMEDEV BOGOR</span>
+            <span>© 2025 GAMEDEV BOGOR</span>
           </p>
         </div>
 
