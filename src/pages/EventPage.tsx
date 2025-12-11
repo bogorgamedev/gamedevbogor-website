@@ -26,8 +26,8 @@ const EventsPage = () => {
 
         {/* Upcoming Events */}
         <section className="mb-16">
-          <div className="bg-blue-700 border-2 btn inline-block px-6 py-2 mb-6">
-            <h2 className="text-white font-bold text-xl pixel-font">UPCOMING EVENTS</h2>
+          <div className="bg-green-400 border-2 btn inline-block px-6 py-2 mb-6">
+            <h2 className="text-gray-800 font-bold text-xl pixel-font">UPCOMING EVENTS</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -58,7 +58,7 @@ const EventsPage = () => {
                         <div className="w-2 h-2 bg-green-500 border border-black"></div>
                         <span className="text-gray-700 font-bold">Date : {event.date}</span>
                       </div>
-                      <div className="bg-yellow-400 px-2 py-1 btn border-black">
+                      <div className="bg-yellow-500 px-2 py-1 btn border-black">
                         <span className="text-black font-bold text-xs font-mono">COMING SOON</span>
                       </div>
                     </div>
@@ -76,8 +76,8 @@ const EventsPage = () => {
 
         {/* Past Events */}
         <section>
-          <div className="bg-purple-700 border-2 btn inline-block px-6 py-2 mb-6">
-            <h2 className="text-white font-bold text-xl pixel-font">PAST EVENTS</h2>
+          <div className="bg-green-400 border-2 btn inline-block px-6 py-2 mb-6">
+            <h2 className="text-gray-800 font-bold text-xl pixel-font">PAST EVENTS</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,7 +108,7 @@ const EventsPage = () => {
                         <div className="w-2 h-2 bg-red-500 border border-black font-mono"></div>
                         <span className="text-gray-700 font-bold">Date : {event.date}</span>
                       </div>
-                      <div className="bg-green-400 px-2 py-1 border btn border-black font-mono">
+                      <div className="bg-green-500 px-2 py-1 border btn border-black font-mono">
                         <span className="text-black font-bold text-xs">COMPLETED</span>
                       </div>
                     </div>
