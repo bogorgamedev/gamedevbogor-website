@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import img1 from "../assets/example.jpeg";
-import img2 from "../assets/example2.jpeg";
+import img1 from "../assets/img1.jpg";
 import img3 from "../assets/Logo_bogor.png";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -10,8 +9,7 @@ export default function Hero() {
   const [isSosmedModalOpen, setIsSosmedModalOpen] = useState(false);
 
   const images = [
-    { src: img1, alt: "Workshop" },
-    { src: img2, alt: "Gathering" },
+    { src: img1, alt: "GGJ 2025" },
     { src: img3, alt: "Logo" },
   ];
 
