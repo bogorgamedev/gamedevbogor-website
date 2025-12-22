@@ -64,11 +64,11 @@ const EventDetailPage = () => {
  
         <div className={`mb-8 transition-all duration-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
           <Link 
-            to="/events" 
-            className="font-mono inline-flex items-center btn gap-2 bg-green-400 hover:bg-green-500 text-gray-800 px-4 py-2 border-2 border-black font-bold transition-all hover:scale-105"
-          >
-            ← BACK TO EVENTS
-          </Link>
+              to="/events" 
+              className="inline-flex items-center gap-2 btn-bold bg-green-400 hover:bg-green-500 text-black px-6 py-3 border-2 border-black font-bold transition-all hover:scale-105 font-mono"
+            >
+              ← BACK TO EVENTS
+            </Link>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
