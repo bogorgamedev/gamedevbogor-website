@@ -100,7 +100,7 @@ export default function Hero() {
                 className="font-mono text-white px-4 sm:px-6 py-3 sm:py-4 border-2 btn font-bold text-center transition-all hover:scale-105 text-sm sm:text-base"
                 style={{backgroundColor:"#25D366"}}
               >
-                WHATSAPP GRUB
+                WHATSAPP GROUP
               </a>
               <button 
                 onClick={handleSosmedClick}
